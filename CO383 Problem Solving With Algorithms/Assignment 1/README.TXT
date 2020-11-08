@@ -1,0 +1,1 @@
+This is a simple algorithm where if the user inputs any number between 0 and 9 the program will output this number in letters.
