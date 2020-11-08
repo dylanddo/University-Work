@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<img src="Stalin.jpg" id="image" onmouseover="newPicture()" onmouseout="oldPicture()"/> <br/><br/>
+
+<script>
+
+function newPicture()
+{
+    // https://www.youtube.com/watch?v=0o4HQ_TYP9A&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=35
+   
+    document.getElementById("image").src = "Lenin.jpg";   
+}
+
+function oldPicture()
+{
+    document.getElementById("image").src = "Stalin.jpg";
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title>Frist Page</title>
+
+<style>
+
+/*This is how you make comments in style (not doing comments correctly in style can cause it not to work) */
+</style>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+document.write(Math.PI + "<br/>");
+document.write(Math.E + "<br/>");
+
+var n = prompt("Enter a number", "");
+var answer = Math.sqrt(n);
+alert("The square root of " + n + " is: " + answer);
+
+// How many years until I turn 65
+// this.age gets our age
+function yearsLeft()
+{
+    var numYears = 65 - this.age;
+    return numYears;
+}
+
+
+// Creating a new object.
+// Always have to use the keyword new when creating a new object.
+var dylan = new person("Dylan Danga", 20);
+
+// We need to include parentheses
+document.write(dylan.yearsUntilRetire() + " years until " + dylan.name + " can retire.");
+</script>
+
+<!--This is how you make a comment in HTML-->
+</body>
+</html>

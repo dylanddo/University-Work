@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+
+<!-- https://www.youtube.com/watch?v=Yt6tMzQIGGA&list=PLr6-GrHUlVf9ZleRsd5oTcrziNglndsXW&index=18&t=0s -->
+<style type="text/css">
+        body
+{  
+    margin: 0px; 
+}
+ 
+#container
+{
+  width: 968px; 
+  /*  
+    The layout is fixed.
+    The page won't go beyond 968px.
+    This means there is also some whitespace.
+    All the sections have to be within the 968px. 
+  */
+
+  margin: 0px auto; /* auto positions the page at the centre */
+ 
+}
+ 
+/* HEADER section ========================== */
+ 
+.header
+{  
+  background:#5c755e; 
+  height:75px; 
+  width: 964px; 
+  border: solid 2px #000; 
+  /* The header is 968px because the width is 964px and 4px total for border (left border is 2px  and right border is 2px) */
+  color:white;
+}
+ 
+/* NAVIGATION section ====================== */
+ 
+#nav
+{  
+  background:black; 
+  height:30px; 
+  width: 964px; 
+  border: solid 2px #000;  
+  font-weight:bold;
+}
+ 
+/* SIDEBAR ================================= */
+ 
+.sidebar
+{  
+  float:left; 
+  width:176px; 
+  height:9500px; 
+  background: #9c9f84; 
+  border-left: solid 2px #000; 
+  /* Total pixel size is 178 (176 + 2), we don't consider the border-bottom only width and border-left */
+  border-bottom: solid 2px #000;
+  border-bottom-left-radius:1em;
+}
+ 
+ 
+ 
+/* MAIN ========================================= */
+ 
+.main
+{
+    float: left;
+    width: 786px;
+    height: 9500px;
+    background: #e5e4d7; 
+    border-right: solid 2px #000;  
+    border-left: solid 2px #000; 
+    /* 
+      Total pixel size is 968 (178 + 786 + 2 + 2), we don't consider the border-bottom only width, border-left and border-right.
+      If the pixel size exceeds 968 the main section will not be able to fit side by size so it will go at the bottom.
+    */
+    border-bottom: solid 2px #000;
+    solid;      font-family: Arial;
+    font-size: 16px;
+    overflow: auto ;
+    border-bottom-right-radius:1em;
+ 
+}
+    </style>
+</head>
+ 
+<body>
+    <div id="container">
+  
+        <div class="header">
+    
+        </div>
+    
+    
+        <div id="nav"> 
+    
+        </div>          
+    
+    
+        <div class="sidebar">
+    
+        </div>
+    
+    
+        <div class="main">
+    
+        </div> 
+  
+  
+    </div>
+ 
+</body>
+</html>

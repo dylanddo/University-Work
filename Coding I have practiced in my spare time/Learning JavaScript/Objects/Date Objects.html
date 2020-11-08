@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8" />
+<title></title>
+
+<style>
+
+/*This is how you make comments in style (not doing comments correctly in style can cause it not to work) */
+</style>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+//function doSomething()
+//{
+  //  document.write("Tuna ");
+//}
+
+//setInterval("doSomething()", 1000)
+// 1st parameter is the method.
+// 2nd parameter is in miliseconds (this runs program every 1 second)
+
+
+//Clock
+function printTime()
+{
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minuites = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+
+    document.write(hours + ":" + minuites + ":" + seconds + "<br/>");
+}
+
+setInterval("printTime()", 1000);
+
+</script>
+
+<!--This is how you make a comment in HTML-->
+</body>
+</html>

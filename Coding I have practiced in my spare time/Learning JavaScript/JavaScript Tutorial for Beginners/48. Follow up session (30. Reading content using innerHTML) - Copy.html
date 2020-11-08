@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<p class="para">Hello there </p> 
+<p class="para">from the Moon</p> 
+<p class="para"></p> 
+
+<button id="test" onClick="changeStyle()">Hit submit to combine these words</button>
+
+
+<script>
+
+function changeStyle()
+{
+    
+    // https://www.youtube.com/watch?v=dWdVc-KWXJ4&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=31
+    // WE must use SINGLE QUOTATIONS with getElementsByClassName.
+    // paragraph[n] is the index.
+    // We use innerHTML to read the text.
+
+
+    var paragraph = document.getElementsByClassName('para');
+
+    var firstParaText = paragraph[0].innerHTML;
+    var secondParaText = paragraph[1].innerHTML;
+
+    var combineThem = paragraph[2].innerHTML = firstParaText + secondParaText;
+
+    // Blanks out text
+    var firstParaText = paragraph[0].innerHTML = "";
+    var secondParaText = paragraph[1].innerHTML = "";
+
+    // The Hello there from the Moon disappears because the paragraph now has an index value of 0 (paragraph[0]).
+    // var firstParaText = paragraph[0].innerHTML = ""; will turn paragraph[0] into a empty string when the button is pressed again.
+   
+    // To prevent this we will hide the button.
+    // First we give the button an ID.
+
+    document.getElementById("test").style.visibility = "hidden";    // We use the style object to hides button after it has been clicked once.
+
+}
+
+</script>
+
+</body>
+</html>

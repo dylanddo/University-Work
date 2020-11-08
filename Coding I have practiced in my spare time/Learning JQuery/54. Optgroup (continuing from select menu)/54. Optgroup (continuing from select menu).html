@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+
+                <!-- We need to create a form in order to create a select menu (dropdown) -->
+                <form id="form">
+
+                  <select id="files">
+
+                    <!-- We have 2 groupings of optionns in the drop down menu -->
+                    <!-- Use jquery-ui-strcutre to edit label text -->
+                    <optgroup label="Cities">
+                      <option value="London">London</option>
+                      <option value="Manchester">Manchester</option>
+                      <option value="Liverpool">Liverpool</option>
+                    </optgroup>
+
+                    <optgroup label="Countries">
+                      <option value="England">England</option>
+                      <option value="Scotland">Scotland</option>
+                      <option value="Wales">Wales</option>
+                    </optgroup>
+
+                  </select>
+
+                </form>
+      
+              </div>
+
+              <div class="main">
+                
+                <img id="resize" src="caesar.jpg">
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a pound sign for a id.
+             $("#files").selectmenu();
+
+             $("#files").selectmenu({width: 150, icons: {button: "ui-icon-arrowthick-1-s"}});
+      });
+
+     </script> 
+     
+</body>
+</html>

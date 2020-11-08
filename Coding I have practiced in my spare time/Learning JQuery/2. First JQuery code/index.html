@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+ 
+</head>
+ 
+<body>
+ 
+ 
+ 
+ 
+ 
+	<div id="left">
+		<h2>Left Content Area</h2>
+		<p>This area will contain the left content area.  We will populate this area with images and text. </p>
+	</div>
+ 
+	<div id="center">
+		<h2>Center Content Area</h2>
+		<p>This area will contain the center content area.  This area will contain the main articles. </p>
+	</div>
+ 
+	<div id="right">
+		<h2>Right Content Area</h2>
+		<p>This area will contain the right content area. We will populate this area with links and text.</p>
+ 
+	</div>
+ 
+ 
+ 
+ 
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+	 
+	  /*
+	 	JQuery function
+		 Ready Function
+		 Waits until our page is fully downloaded before any of our JQuery code is executed.
+	 */
+
+	 $(document).ready(function()
+	 {
+		/*
+		 	Once we call the $ sign we are calling the JQuery library.
+			With ID's we use a # sign.
+			With class name's we use a . sign.
+		*/
+
+		 $("#right", "#center").hide();
+		 
+		/*
+			$("selector") is a JQuery method (it is like a more efficient document.getElementById)
+			hide() is a JQuery method.
+			We only need one line of code whereas we would need more for javascript.
+		*/ 
+	 });
+
+</script>
+ 
+</body>
+</html>

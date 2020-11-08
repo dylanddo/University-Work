@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+		
+		<p>This section is the left content area. </p>
+	</div>
+	
+	<div id="center">
+		
+		<p>This area will contain the center content area.</p>
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the right content area.
+		</p>
+		
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>	<!-- With JQuery we don't need to put a onClick method here -->
+    </div>
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+		  $(document).ready(function() 
+		  {
+		  
+			// We select the button.
+			//Then we call the click method which calls the function.
+			// The hide method will happen when the function is called.
+			$("button").click(function() 
+			{
+			
+			$("#right").hide();
+			});
+
+          });
+ 
+ 
+ </script> 
+</body>
+</html>

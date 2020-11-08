@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<p class="para"> Old Text 1 </p> 
+<p class="para"> Old Text 2 </p> 
+
+<button onClick="changeStyle()">Hit submit for some new text.</button>
+
+
+<script>
+
+function changeStyle()
+{
+    
+    // https://www.youtube.com/watch?v=dlaYyZ6vW48&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=30
+    // WE must use SINGLE QUOTATIONS with getElementsByClassName.
+    // paragraph[n] is the index.
+    // We use innerHTML to assign a new value to the text.
+
+
+    var paragraph = document.getElementsByClassName('para');
+
+    var changeText = paragraph[0].innerHTML = "New Text 1";
+    var changeText = paragraph[1].innerHTML = "New Text 2";
+}
+
+</script>
+
+</body>
+</html>

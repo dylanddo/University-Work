@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+	  <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+	  <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+
+	<div id="left">
+    <h2>This is a heading</h2>
+		
+        <p class="para2">This is FIRST para </p>
+        <p>This is Second para </p>
+
+        <!-- We want to put our date picker in the box -->
+        Pick a travel date: <input type="text" id="pickDate">
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+
+    <li>Bobcats</li>
+    <li>Wildcats</li>
+    <li>Sharks</li>
+ 
+  </ul>
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.</p>
+
+                <img src="Lenin.jpg">
+		
+	</div>
+
+	<div id="test">
+        <button> Slide section up </button>
+        <button id="testB"> Slide section down </button>
+        </div>
+
+	
+
+ <script src="jquery-3.5.1.js"></script>
+ <script src="jqueryui/jquery-ui.js"></script>
+ <script>
+    $(document).ready(function() {
+          
+      $("button").click(function() {
+
+		    $("#right").slideToggle();
+      });
+
+      $("#testB").click(function() {
+
+		    $("#right").slideDown();
+      });
+
+      $("#pickDate").datepicker({minDate: new Date(2014,11,25), maxDate: new Date(2024,11,25), showButtonPanel: true, currentText: "Current Date",  closeText: "Close Calender", yearSuffix: " AD"});  // We use {} inside the parentheses for more options.
+      // Computers start from 0. We can only go back to DECEMBER 25th 2014.
+      // maxDate
+      // {showButtonPanel: true} adds buttons at the bottom of the calender.
+      // {showButtonPanel: true, currentText: "Current Date"} changes the Today text to Current Date.
+      // {showButtonPanel: true, closeText: "Close Calender"} changes the Close text to Close Calender.
+      // {yearSuffix: " AD"}
+  });
+ 
+ 
+ </script> 
+</body>
+</html>

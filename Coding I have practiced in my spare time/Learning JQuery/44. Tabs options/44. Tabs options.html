@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+    
+              <div id="nav"> 
+       
+           
+              </div>          
+        
+
+              <div class="sidebar">
+      
+</div>
+
+
+              <div class="main">
+        <div id = "maincontainer">
+         <ul>
+            <li><a href = "#greece">Ancient Greece</a></li>
+            <li><a href = "#rome">Ancient Rome</a></li>
+            <li><a href = "#egypt">Ancient Egypt</a></li>
+			<li><a href = "#egypt2">Angelo Mampuya</a></li>
+         </ul>
+			
+         <div id = "greece">
+            <p>The early part Ancient Greece was dominated by 
+			Sparta and Athens. </p>
+         </div>
+			
+         <div id = "rome">
+            <p>Julius Caesar was one of Rome's greatest 
+			generals. </p>
+         </div>
+			
+         <div id = "egypt">
+            <p> The ancient Egyptians built many 
+			fabulous buildings including the pyramids. </p>
+         </div>
+		 
+		  <div id = "egypt2">
+            <p> Bonjour Angelo Emmannel Mampuya Wambaka!</p>
+         </div>
+
+              </div> 
+       
+
+          </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+				// 1st you need a container.
+            // 2nd you need an unordered list with each li representing a tab. The href will link to the coresponding id from the div.
+            // 3rd you need the div sections.
+             
+             $("#maincontainer").tabs({active: 1});  // index starts at 0. Ancient Rome will be the open panel.
+
+             $("#maincontainer").tabs({collaspable: true}); // Allows tabs to be minimised.
+
+             $("#maincontainer").tabs({heightStyle: "fill"}); // Allows panel to fill the entire page.                  	
+             //$("#maincontainer").tabs({heightStyle: "content"}); // Allows panel to fill the size of the current content not just the largest.   
+            
+             $("#maincontainer").tabs({mouseover: "content"})  // Tabs will change when the mouse hovers over it.
+
+             $("#maincontainer").tabs({disabled: [1, 2]})   // Disbales the specific tabs.
+
+            });
+
+     </script> 
+     
+</body>
+</html>

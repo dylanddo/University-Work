@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Shoe
+comment1.params=brand\ size
+comment1.target=Shoe(java.lang.String,\ double)
+numComments=2

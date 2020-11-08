@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+		
+		<p>This is FIRST para </p>
+        <p>This is Second para </p>
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+			<li>Bobcats</li>
+			<li>Wildcats</li>
+		</ul>		
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.
+		</p>
+		
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>
+        </div>
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+          $(document).ready(function() {
+          
+		  $("button").click(function() {
+		   
+			// $("selector").css("property", "value");
+			
+			/*
+				$("#left").css("color", "blue");
+
+				$("#left").css("border", "solid 2px red");
+			*/
+
+
+			// Multiple CSS rules
+
+			$("#left").css({"color": "blue", "border": "solid 2px red"});
+			// We use brackets just before both parentheses.
+			// We seperate different CSS methods using a colon instead of a comma.
+			});
+		});
+ 
+ 
+ </script> 
+</body>
+</html>

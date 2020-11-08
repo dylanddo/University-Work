@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<p id="para1">Some text for this tutorial</p>
+<p id="para2">Some text for this tutorial</p>
+<p id="para3">Some text for this tutorial</p>
+<p id="para4">Some text for this tutorial</p>
+
+<button onClick="changeStyle()">Hit submit if you want to change all the text.</button>
+
+
+<script>
+
+function changeStyle()
+{
+    
+    // https://www.youtube.com/watch?v=DzBmQbcr1ls&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=28
+    // getElementByTagName allows us to grab all the tags at once and manipulate the text.
+    // we can't do this with getElementById because it is too specific.
+    
+    var paragraph = document.getElementsByTagName("p");
+
+    for(var i = 0; i < paragraph.length; i++)
+    {
+        var changeParaText = paragraph[i].style.fontStyle = "italic";
+    }
+}
+
+</script>
+
+</body>
+</html>

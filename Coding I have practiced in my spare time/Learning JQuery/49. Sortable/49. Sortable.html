@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+      
+              </div>
+
+              <div class="main">
+
+               <!-- We use a class instead of an id so we can edit all the div's at once --> 
+                <!-- Because the img is not incased in a div tag all the images will appear side by side since img is a inline element. -->
+              <div class="sortable">
+
+                <img src="caesar1.jpg">
+                
+                <img src="caesar2.jpg">
+                
+                <img src="caesar3.jpg">
+
+              </div>
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a period for a class.
+             $(".sortable").sortable(); // We can sort the order of the image but we can't drag it to anywhere on the page.
+      });
+
+     </script> 
+     
+</body>
+</html>

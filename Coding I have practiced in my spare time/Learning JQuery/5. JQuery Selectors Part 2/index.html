@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+		
+		<p>This is FIRST para </p>
+        <p>This is Second para </p>
+	</div>
+	
+	<div id="center">
+		
+		<p>This area will contain the center content area.</p>
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the right content area.
+		</p>
+		
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>
+        </div>
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+          $(document).ready(function() {
+          
+		  $("button").click(function() {
+		   
+		//$("div:even").hide(); // Hides even div elements. 	$("div:odd").hide(); hies odd div elements.
+		
+		   $("p:contains('center')").hide();	
+		   // We can select text by using contains.
+		   // We hide the element (paragraph) that contains that particular text (center).
+			
+			});
+		});
+ 
+ 
+ </script> 
+</body>
+</html>

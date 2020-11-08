@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<p id="para" onmouseover="changeBackground()" onmouseout="backToNormal()">Some text for this tutorial</p>
+
+<script>
+
+function changeBackground()
+{
+    // https://www.youtube.com/watch?v=Ka033dkRJi0&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=34
+   
+    document.getElementById("para").style.background = "red";   // Changes colour of the background of the text when we hover over it.
+}
+
+function backToNormal()
+{
+    document.getElementById("para").style.background = "";  // Changes colour of the background of the text back to normal when we stop hovering.
+}
+
+</script>
+
+</body>
+</html>

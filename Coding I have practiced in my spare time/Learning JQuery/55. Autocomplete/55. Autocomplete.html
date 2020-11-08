@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+
+                <div id="cities">
+                  Cities: <input type="text" id="textbox"> <!-- input doesn't need an end tag -->
+                </div>
+      
+              </div>
+
+              <div class="main">
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We have to add the value in the parentheses.
+            // autocomplete has no uppercase letters.
+             $("#textbox").autocomplete({source: ["Dallas", "Detroit", "New York"]});
+      });
+
+     </script> 
+     
+</body>
+</html>

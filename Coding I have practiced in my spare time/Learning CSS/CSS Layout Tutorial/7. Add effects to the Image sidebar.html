@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- CSS always go in the head-->
+<style type="text/css">
+
+/* Everything in the body will inherant this */
+body 
+{
+    background-color: #9c9f84;
+    margin: 0px;
+    font-family: Verdana, Georgia, serif;
+    font-size: 14px;
+}
+
+/* We use # with id's and . with class names */
+#header 
+{
+    background-color: #5c755e;
+    margin: 10px;   /* margin is the space around the element*/
+    height: 90px;
+    /* We haven't set the width because we want the webpage to size accordingly as the user size the broswer */
+    border-radius: 5px; /* Adds curve to the section */
+}
+
+#navbar 
+{
+    background-color: #5c755e;
+    margin: 10px;   /* margin is the space around the element*/
+    height: 35px;
+    /* We haven't set the width because we want the webpage to size accordingly as the user size the broswer */
+    border-radius: 5px; /* Adds curve to the section */
+}
+
+.main 
+{
+    background-color: #e5e4d7;
+    margin-left: 10px;
+
+    margin-right: 320px; 
+    /* 
+        We get 320px because we add up all the pixels from sideRight
+        10 x 2 (margin on left and right) + 20 x 2 (padding on left and right) + 260 = 320px
+    */
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Adds curve to the section */
+    padding: 20px;  /* Space between the border and the text */
+    font-size: 110%; /* Increase font size by 110% from the font size 14 set in the body*/
+    /* We haven't set a width or height because we want the webpage to size accordingly as the user size the broswer */
+}
+
+h1
+{
+    font-size: 120%;
+    color: #ce282e;
+}
+
+h2
+{
+    font-size: 120%;
+    color: darkblue;
+}
+
+/* https://youtu.be/qmqD4aTv18Q?t=173 */
+.sideRight 
+{
+    background-color: #e5e4d7;
+    font-size: 105%;  /* Increase font size by 105% from the font size 14 set in the body*/
+    padding: 20px;  /* Space between the border and the text */
+    width: 260px;
+    float: right;   /* If you use float you must give a width */
+    border-radius: 5px; /* Adds curve to the section */
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 0px;
+    margin-bottom: 10px;
+    
+    clear: right;   /* Makes sure the side bar are stacked in a top down manner (This applies to float) */
+    
+}
+
+.imageSideBar 
+{
+    width: 300px;   
+    /* 
+        We don't want padding as that makes the image smaller but we add the pixels to the width
+        padding was 20px but we add 40 to the width to make it 300px since we have to consider left and right padding
+    */
+    float: right;   /* If you use float you must give a width */
+    border-radius: 5px; /* Adds curve to the section */
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-top: 0px;
+    margin-bottom: 10px;    
+    clear: right;   /* Makes sure the side bar are stacked in a top down manner (This applies to float) */
+
+    opacity: 1.0;   /* Effects transparency of image */
+    transition: opacity 0.5s ease-in-out; /* The transition from opacity 1.0 to 0.4 is 0.5 second */
+}
+
+/* Hover effect when mouse is on image */
+.imageSideBar:hover 
+{
+    opacity: 0.4;   /* Effects transparency of image */
+}
+
+#footer 
+{
+    background-color: #5c755e;
+    margin: 10px;   /* margin is the space around the element*/
+    height: 60px;
+    border-radius: 5px;
+    clear: both;   
+    /* 
+        Floated element is not in the CSS flow so it will go over the footer
+        clear: both; prevents this.
+    */
+}
+
+/*This is how you make comments in style (not doing comments correctly in style can cause it not to work) */
+</style>
+</head>
+
+
+
+<body>
+    
+    <!-- id is used to identify each section -->
+    <div id="header">
+        
+    </div>
+
+
+    <div id="navbar">
+        
+    </div>
+
+
+    <!-- 1st Sidebar -->
+    <!-- The float effect won't show up on the page properly if it is after the main div-->
+    <div class="sideRight">
+
+        <h2>Lecture Dates</h2>
+        
+        <p> 11/07 - Lecture on Caesar </p>
+        <p> 11/14 - Lecture on Hannibal </p>
+        <p> 11/21 - Lecture on Alexander </p>
+        <p> 11/28 - Lecture on Napolean </p>
+        <p> 12/05 - Lecture on Scipio </p>
+        
+    </div>
+
+
+    <!-- It stacks the size bar to the left (before any changes)-->
+    <!-- We want it stacked in a top down manner -->
+    <div class="sideRight">
+
+        <h2>Lecture Dates 2</h2>
+        
+        <p> 11/07 - Lecture on Caesar </p>
+        <p> 11/14 - Lecture on Hannibal </p>
+        <p> 11/21 - Lecture on Alexander </p>
+        <p> 11/28 - Lecture on Napolean </p>
+        <p> 12/05 - Lecture on Scipio </p>
+        
+    </div>
+
+
+    <div>
+
+        <img class="imageSideBar" src="flowers.jpg"/>
+        
+    </div>
+
+
+
+    <!-- 1st Content Pane -->
+    <div class="main">
+        
+        <h1>HANNIBAL - THE BATTLE OF CANNAE</h1>
+       
+        <p>
+            After defeating the Romans at the Battle of Lake Trasimene, Hannibal now moved his forces down south.  There was panic in Rome 
+            and Quintus Fabius Maximus was appointed dictator to deal with Hannibal.  Fabius, however, refused to meet Hannibal in the 
+            open field and this strategy became highly unpopular in Rome.  Romans were used to attacking, not hiding.  The Romans were 
+            forced to go on the offensive after Hannibal positioned his forces betweeen Rome and it's vital grain supply.  This setup the 
+            epic Battle of Cannae. Here Hannibal defeated the Romans inflicting the worst single day defeat in Rome's history.
+        </p>
+
+        <h1>AFTERMATH OF THE BATTLE OF CANNAE</h1>
+
+        <p>
+            After the horrific defeat at the Battle of Cannae, the Romans reinstituted Fabius' avoidance strategy.  The Romans no longer 
+            refused to meet Hannibal in head on collisons.  Rather the Roman army kept a watchful eye on Hannibal, but always at a close 
+            distance.
+        </p>
+        
+        <p>
+            The avoidance strategy worked but it took forever.  It took almost two long decades to drive Hannibal out of Italy.  And even 
+            then Hannibal was never defeated in Italy.  The Romans, adopting a tactic out of Hannibal's playbook, launched an attack against 
+            Carthage itself. This forced Hannibal to travel back to Africa to defend the city.  Here he was defeated at the Battle of Zama.
+        </p>        
+
+    </div>
+
+    <!-- 2nd Content Pane -->
+    <div class="main">
+        <h1>Ancient Egypt - THE Pharoah</h1>
+        <p>
+            The Pharoah was a living god.  He was at the top of Ancient Egyptian society.  The pharoah
+            was responsible for the well being of his people and was obligated to keep the order. 
+            He was all powerful and he spent most of his time at the capital city of Memphis.  Here 
+            he administered control of both Lower and Upper Egypt.
+        </p>
+        
+        <h1>The Tombs of the Pharoahs</h1>
+        <p>
+            The Pharoah spent most of his life working on his tomb.  The Pharoah's had this busy afterlife
+            where they continued to control the universe after their death.  The god Anubis assisted
+            the pharoah in the mummfication process.  After the pharoah died he traveled to the underworld
+            using the Book of the Dead.
+        </p>
+        
+        <h1>The Pyramids</h1>
+        <p>
+            The Pharoah spent most of his life working on his tomb.  The Pharoah's had this busy afterlife
+            where they continued to control the universe after their death.  The god Anubis assisted
+            the pharoah in the mummfication process.  After the pharoah died he traveled to the underworld
+            using the Book of the Dead.
+        </p>
+    </div>
+   
+
+    <!-- footer goes at the bottom of the page -->
+    <div id="footer">
+
+    </div>
+</body>
+
+</html>

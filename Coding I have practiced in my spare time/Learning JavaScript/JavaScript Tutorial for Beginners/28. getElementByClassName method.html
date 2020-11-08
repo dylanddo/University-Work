@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<p class="para">Some text for this tutorial</p> <!-- Node list 0 -->
+<p class="para">Some text for this tutorial</p> <!-- Node list 1 -->
+
+<button onClick="changeStyle()">Hit submit if you want to change all the text.</button>
+
+
+<script>
+
+function changeStyle()
+{
+    
+    // https://www.youtube.com/watch?v=ChLd2yFp-lA&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=29
+    // WE must use SINGLE QUOTATIONS with getElementsByClassName.
+    
+    var paragraph = document.getElementsByClassName('para');
+
+    for(var i = 0; i < paragraph.length; i++)
+    {
+        var changeColor= paragraph[i].style.color = "white";
+        var changeBackgroundColor= paragraph[i].style.backgroundColor = "black";
+    }
+}
+
+</script>
+
+</body>
+</html>

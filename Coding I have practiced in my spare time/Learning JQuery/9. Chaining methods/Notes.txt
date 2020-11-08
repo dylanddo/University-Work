@@ -1,0 +1,23 @@
+Selectors
+==================================================================================
+
+type -------------------------- CSS selector
+#id --------------------------- CSS selector
+descendant -------------------- CSS selector
+:first ------------------------ JQuery selector (first element selected)
+:last ------------------------- JQuery selector (last element selected)
+:not -------------------------- JQuery selector (specify elements not to be selected)
+:even ------------------------- JQuery selector (select even numbered elements)
+:odd -------------------------- JQuery selector (select odd numbered elements)
+:contains --------------------- JQuery selector (select element with certain text)
+
+Methods and Functions
+==================================================================================
+
+ready()   -- Wait until page is loaded
+hide()    -- Hides an element 
+click()   -- Creates a "click" JavaScript event
+css()     -- Style your page with the CSS method
+html()    -- update content - text and html tags
+text()    -- update content - text only
+fadeOut() -- Fade out an element.  Use milliseconds for value - fadeOut("20000");

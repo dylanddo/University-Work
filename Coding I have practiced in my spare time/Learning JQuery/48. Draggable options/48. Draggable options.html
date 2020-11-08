@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+      
+              </div>
+
+              <div class="main">
+
+               <!-- We use a class instead of an id so we can edit all the div's at once --> 
+
+              <div class="draggable">
+                <img src="caesar1.jpg">
+              </div>
+
+              <div class="draggable">
+                <img src="caesar2.jpg">
+              </div>
+
+              <div class="draggable">
+                <img src="caesar3.jpg">
+              </div>
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a period for a class.
+             $(".draggable").draggable({grid: [50, 30]}); // It makes it so it seems you are dragging an image on a grid (makes it easier to line up).
+	     
+             $(".draggable").draggable({containment: "parent"}); // Prevents user from dragging the element outside its parent element in this case the main div is the parent element.
+
+             $(".draggable").draggable({cursor: "crosshair"}); // Changes the cursor when dragging the images.
+      
+             $(".draggable").draggable({delay: 350}); // Delays the draggin effect.
+      
+             $(".draggable").draggable({revert: true}); // Reverts the image back to its original place.
+      
+             $(".draggable").draggable({axis: "y"}); // Allows user to drag the image in the particular axis. x is horizontal and y is vertical.
+      });
+
+     </script> 
+     
+</body>
+</html>

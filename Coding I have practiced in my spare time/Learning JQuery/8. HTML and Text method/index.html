@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+		
+		<h2></h2>
+
+		<p>This is FIRST para </p>
+        <p>This is Second para </p>
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+			<li>Bobcats</li>
+			<li>Wildcats</li>
+		</ul>		
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.
+		</p>
+		
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>
+        </div>
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+          $(document).ready(function() {
+          
+		  $("button").click(function() {
+		   
+			//$("p").html("<h3>Tabbey Cats</h3>");	// All the paragraphs will have their text replaced with Tabbey Cats.
+
+			$("p").text("Tabbey Cats");	// HTML tags don't work when using text().
+
+			$("h2").text("Give the h2 some text");	// We can add text to the empty h2 element from div left.
+
+			// html() treats the content as HTML
+			// text() treats the content as text
+			
+			});
+		});
+ 
+ 
+ </script> 
+</body>
+</html>

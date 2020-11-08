@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    body {
+    background-color: #9c9f84;
+    margin: 0px;
+    font-family: Verdana, Georgia, serif;
+    font-size: 14px;
+    }
+    
+    #main {
+    background-color: #e5e4d7;
+    margin-left: 10px;
+    margin-right: 320px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    }
+
+</style>
+</head>
+ 
+<body>
+ 
+    <div id="main">
+    
+        <p>
+            After defeating the Romans at the Battle of Lake Trasimene, Hannibal now moved his forces down south.  There was panic in Rome and Quintus Fabius Maximus was appointed dictator to deal with Hannibal.  Fabius, however, refused to meet Hannibal in the open field and this strategy became highly unpopular in Rome. 
+        </p>
+        
+        <p>
+            The Romans were then forced to retreat to Rome.  It was a total defeat.
+        </p>
+        
+        <p>
+            After the horrific defeat at the Battle of Cannae, the Romans reinstituted Fabius' avoidance strategy.  The Romans no longer refused to meet Hannibal in head on collisons.  
+        </p>
+        
+        <p>
+            The avoidance strategy worked but it took forever.  It took almost two long decades to drive Hannibal out of Italy.  And even then Hannibal was never defeated in Italy.  
+        </p>
+    
+    </div>
+    
+    &nbsp&nbsp
+    <button onclick="changeText()"> Click here to change some text </button>
+    
+    
+<script>
+
+    // We traverse the DOM downwards
+    function changeText()
+    {
+        var parent = document.getElementById("main");   // First we grab the parent.
+        
+        //var child = parent.firstElementChild;   // We don't have to worry about whitespaces, it will just give us the first paragraph.
+        
+        var child = parent.lastElementChild;    // Changes last paragraph colour.
+
+        //var child = parent.childNodes[3];    // We create an element to hold the child 
+        // This builds a node list of all the nodes under our parent (we can use the index to target whatever child we want).
+        // It says childNodes so it contains every node (whitespace is treated as a node).
+        // So position 0 is the first whitespace, position 1 is the paragraph that starts with After defeating, position 2 is the next whitespace etc.
+ 
+        child.style.color = "blue";
+ }
+
+</script>
+ 
+</body>

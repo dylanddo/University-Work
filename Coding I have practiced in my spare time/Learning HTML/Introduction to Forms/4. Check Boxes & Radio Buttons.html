@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- CSS always go in the head-->
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+   
+<!-- Form always go in the body -->   
+<!-- input="text" tells you what tyoe of input you want -->   
+<!-- name="username" is used to differeniate between the different inputs -->   
+<!-- size doesn't actually affect the size that can be inputed it just changes the look -->   
+<!-- maxlength affects the input size -->
+<!-- value will populate the text field -->
+<form>
+   Username: <input type="text" name="username" value="Enter Name Here"/>
+
+<p>
+   <!-- Group all buttons under the same name -->
+   Male: <input type="radio" name="gender" value="male">
+   Female: <input type="radio" name="gender" value="female">
+</p>
+
+<p>
+   <!-- Group all checkboxes under the same name -->
+   <!-- You can select multiple options unlike with radio buttons -->
+   Select the food that you would like to order!<br/>
+   Bacon <input type="checkbox" name="food" value="bacon"/>
+   Ham <input type="checkbox" name="food" value="ham"/>
+   Tuna <input type="checkbox" name="food" value="tuna"/>
+   Soda <input type="checkbox" name="food" value="soda"/>
+</p>
+
+</form>
+
+</body>
+</html>

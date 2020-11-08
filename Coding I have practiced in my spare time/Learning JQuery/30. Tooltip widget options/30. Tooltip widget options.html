@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+	  <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+	  <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+
+	<div id="left">
+    <h2>This is a heading</h2>
+		
+        <p class="para2">This is FIRST para </p>
+        <p>This is Second para </p>
+
+        <!-- We want to put our date picker in the box -->
+        Pick a travel date: <input type="text" id="pickDate">
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+
+    <li>Bobcats</li>
+    <li>Wildcats</li>
+    <li>Sharks</li>
+ 
+  </ul>
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.</p>
+
+                <img src="Lenin.jpg" title="Lenin Himself!">  <!-- The title will appear as the tooltip -->
+		
+	</div>
+
+	<div id="test">
+        <button> Slide section up </button>
+        <button id="testB"> Slide section down </button>
+        </div>
+
+	
+
+ <script src="jquery-3.5.1.js"></script>
+ <script src="jqueryui/jquery-ui.js"></script>
+ <script>
+    $(document).ready(function() {
+          
+      $("button").click(function() {
+
+		    $("#right").slideToggle();
+      });
+
+      $("#testB").click(function() {
+
+		    $("#right").slideDown();
+      });
+
+      $("img").tooltip(); // A bigger tooltip widget appears when we hover over the image.
+  
+      $("img").tooltip({content: "Hail Lenin"});  // content is the messaage inside the tooltip.
+  
+      $("img").tooltip({track: true});  // tooltip follows the mouse.
+  
+      $("img").tooltip({show: {effect: "pulsate", duration: 800}});  // Adds a pulsate effect. 
+      $("img").tooltip({show: {effect: "fade", duration: 800}});
+      $("img").tooltip({show: {effect: "bounce", duration: 800}});
+      $("img").tooltip({show: {effect: "explode", duration: 800}});
+      $("img").tooltip({show: {effect: "highlight", duration: 800}});
+      $("img").tooltip({show: {effect: "blind", duration: 800}});
+  });
+ 
+ 
+ </script> 
+</body>
+</html>

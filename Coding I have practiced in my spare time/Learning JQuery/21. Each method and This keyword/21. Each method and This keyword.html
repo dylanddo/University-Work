@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+<h2>This is a heading</h2>
+		
+        <p class="para2">This is FIRST para </p>
+        <p>This is Second para </p>
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+    <li>Bobcats</li>
+    <li>Wildcats</li>
+    <li>Sharks</li>
+ 
+  </ul>
+	</div>
+
+  <div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.
+		</p>
+    
+    <!-- <img src=""> -->
+    <img src="Lenin.jpg">
+
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>
+        </div>
+
+
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+    $(document).ready(function() {
+          
+		 $("button").click(function() {
+              
+        //each method is a JQuery method that allows us to loop through each element.
+        $("li").each(function() {
+
+          $(this).html("<li>Tigers</li>");  
+          // this is like the placeholder for each current element in the for each loop.
+          // this represents the li element.
+          // Everything in the li element is replaced by Tigers.
+
+        })
+      
+      });
+    });
+ 
+ 
+ </script> 
+</body>
+</html>

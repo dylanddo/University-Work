@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=TheWindow
+comment1.params=
+comment1.target=TheWindow()
+comment2.params=event
+comment2.target=void\ stateChanged(javax.swing.event.ChangeEvent)
+numComments=3

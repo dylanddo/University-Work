@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+      
+              </div>
+
+              <div class="main">
+
+               <!-- We use a class instead of an id so we can edit all the div's at once --> 
+                <!-- Because the img is not incased in a div tag all the images will appear side by side since img is a inline element. -->
+              <div class="sortable">
+
+                <img src="caesar1.jpg">
+                
+                <img src="caesar2.jpg">
+                
+                <img src="caesar3.jpg">
+
+              </div>
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a period for a class.
+             $(".sortable").sortable(); // We can sort the order of the image but we can't drag it to anywhere on the page.
+      
+             $(".sortable").sortable({opacity: 0.5});   // Affects the opacity of the element we are currently sorting.
+      
+            // $(".sortable").sortable({distance: 150});   // You won't be able to move the image until you move the mouse 150 pixels.
+
+            // $(".sortable").sortable({delay: 350}); // You can't sort the image until 350ms has passed.
+      
+            // $(".sortable").sortable({disabled: true});
+
+            // $(".sortable").sortable({cursor: "move"});  // Changes the cursor when the user chooses to sort the element.
+
+            // $(".sortable").sortable({containment: "parent"});  // Prevents the user from sorting the element outside the parent.
+
+            // $(".sortable").sortable({axis: "x"}); // Allows user to sort the image in the particular axis. x is horizontal and y is vertical.
+      
+            // $(".sortable").sortable({grid: 20, 10]}); // It makes it so it seems you are dragging an image on a grid (makes it easier to line up).
+      });
+
+     </script> 
+     
+</body>
+</html>

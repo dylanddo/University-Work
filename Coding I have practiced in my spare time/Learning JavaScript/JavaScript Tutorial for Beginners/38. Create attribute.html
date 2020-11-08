@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+    body {
+    background-color: #9c9f84;
+    margin: 0px;
+    font-family: Verdana, Georgia, serif;
+    font-size: 14px;
+    }
+    
+    #main {
+    background-color: #e5e4d7;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+    }
+    
+    h2 
+    {
+        font-size: 120%;
+        color: #ce282e;
+    }
+
+    #test
+    {
+        color: darkblue;
+    }
+
+</style>
+    
+</head>
+ 
+<body>
+ 
+<div id="main">
+ 
+    <h2>HANNIBAL - THE BATTLE OF CANNAE</h1>
+    <p>
+        After defeating the Romans at the Battle of Lake Trasimene, Hannibal now moved 
+        his forces down south.  There was panic in Rome and Quintus Fabius Maximus was 
+        appointed dictator to deal with Hannibal.  Fabius, however, refused to meet 
+        Hannibal in the open field and this strategy became highly unpopular in Rome.  
+        Romans were used to attacking, not hiding.  The Romans were forced to 
+        go on the offensive after Hannibal positioned his forces betweeen Rome and 
+        it's vital grain supply.  This setup the epic Battle of Cannae.  Here Hannibal 
+        defeated the Romans inflicting the worst single day defeat in Rome's history.
+    </p>
+    
+    <p>
+        The Romans were then forced to retreat to Rome.  It was a total defeat.
+    </p>
+    
+    <h2>AFTERMATH OF THE BATTLE OF CANNAE</h1>
+    <p>
+        After the horrific defeat at the Battle of Cannae, the Romans reinstituted 
+        Fabius' avoidance strategy.  The Romans no longer refused to meet Hannibal in 
+        head on collisons.  Rather the Roman army kept a watchful eye on Hannibal, but 
+        always at a close distance.
+    </p>
+
+    <p>
+        The avoidance strategy worked but it took forever.  It took almost two long 
+        decades to drive Hannibal out of Italy.  And even then Hannibal was never 
+        defeated in Italy.  The Romans, adopting a tactic out of Hannibal's playbook, 
+        launched an attack against Carthage itself. This forced Hannibal to travel back 
+        to Africa to defend the city.  Here he was defeated at the Battle of Zama.
+    
+    </p>
+    
+    
+</div>
+ 
+&nbsp&nbsp
+<button onclick="newParagraph()">Click if you want to read about another battle </button>
+ 
+&nbsp&nbsp
+<button onclick="removeElements()">Click here to remove section </button>
+ 
+
+
+<script> 
+
+
+function newParagraph() 
+{
+ 
+    // This creates a heading 
+    var elementH = document.createElement("h2");
+    
+    var main = document.getElementById("main");
+    
+    main.appendChild(elementH);
+    
+    var text = document.createTextNode("The Battle of Salamis");
+    
+    elementH.appendChild(text);
+
+    
+    // This creates a paragraph 
+    var elementP = document.createElement("p");
+    
+    main.appendChild(elementP);
+    
+    var text = document.createTextNode("The Battle of Salamis was fought between an alliance of Greek cities and the Persian Empire in 480 BC.  The Greeks decisively defeated the Persian navy.");
+    
+    elementP.appendChild(text);
+
+
+    // This creates an attribute
+    var pAttribute = document.createAttribute("id");    // We can put any html attribute in the paramter e.g. src, href, lang attribute.
+
+    pAttribute.value = "test";  // The id will be set to test.
+
+    elementP.setAttributeNode(pAttribute);  // We add the attribute id="test" to the newly created paragraph tag (elementP).
+ }
+
+
+ function removeElements()
+ {
+    // https://www.youtube.com/watch?v=VV2npCATMGM&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=38
+    
+    var elementH = document.getElementsByTagName("h2")[2]; 
+    // We don't want to remove all h2 elements so we need to specify a position.
+    // [2] specifies which position (index).
+
+    var parent = elementH.parentNode;   // In need to get the parent node before removing child node.
+    
+    parent.removeChild(elementH);   // Removes 3rd heading.
+
+    var elementP = document.getElementsByTagName("p")[4]; 
+
+    var parent = elementP.parentNode;   // In need to get the parent node before removing child node.
+    
+    parent.removeChild(elementP);   // Removes 5th paragraph.
+ }
+
+</script>
+</body>
+</html>

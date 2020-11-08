@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+
+	<div id="left">
+<h2></h2>
+		
+		<p>This is FIRST para </p>
+        <p>This is Second para </p>
+	</div>
+	
+	<div id="center">
+		
+		<ul>
+    <li>Bobcats</li>
+    <li>Wildcats</li>
+ 
+  </ul>
+	</div>
+
+	<div id="right">
+		
+		<p>This area will contain the <b>right content</b> area.
+		</p>
+		
+	</div>
+
+	<div id="test">
+        <button> Hit button to change something </button>
+        </div>
+
+ <script src="jquery-3.5.1.js"></script>
+ <script>
+          $(document).ready(function() {
+          
+		  $("button").click(function() {
+		   
+        // Chaining methods 
+        // We are chaining all the methods back to back to back off our selector object.
+            $("#left").css("color", "red").css("border", "solid 2px blue").fadeOut("20000");
+
+          /*
+ 
+          $("#left").css("color", "red");
+          $("#left").css("border", "solid 2px blue");
+          $("#left").fadeOut("20000");  Fades out the div. It is in miliseconds and we can fade out any element.
+
+
+          */     
+
+                });
+            });
+ 
+ 
+ </script> 
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+    
+              <div id="nav"> 
+       
+           
+              </div>          
+        
+
+              <div class="sidebar">
+                
+                <ul id="verticalMenu">
+                    
+                    <li><a href="">Rome</a>
+                        <ul>
+                            <li><a href="">Early</a></li>    
+                            <li><a href="">Middle</a></li>    
+                            <li><a href="">Late</a></li>    
+                        </ul>
+                    </li> 
+
+                    <li><a href="">Egypt</a>
+                        <ul>
+                            <li><a href="">Early</a></li>    
+                            <li><a href="">Middle</a></li>    
+                            <li><a href="">Late</a></li>    
+                        </ul>
+                    </li> 
+
+                    <li><a href="">Greece</a>
+                        <ul>
+                            <li><a href="">Early</a></li>    
+                            <li><a href="">Middle</a></li>    
+                            <li><a href="">Late</a></li>    
+                        </ul>
+                    </li> 
+
+                </ul>
+                </div>
+
+
+                <div class="main">
+                    <div id="box">
+                    <p>Thank you for visiting our history site</p>
+                    <img src="caesar.jpg">
+                    <div> 
+       
+                    </div> 
+       
+
+          </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+				
+             $("#verticalMenu").menu(); // Puts the list in a menu format.
+             
+             $("#box").dialog({title: "Caesar welcomes you!"}); // Always use squiggly brackets when you want to use options.
+
+             $("#box").dialog({autoOpen: false});   // Disables dialog.    
+
+             $("#box").dialog({draggable: false});   // Disables the ability to drag the dialog box.
+
+             $("#box").dialog({resizable: false});   // Disables the ability to resize the dialog box.  
+             
+            // $("#box").dialog({height: 500, width: 600});   // Disables the ability to resize the dialog box.     	      	  	
+            
+            // $("#box").dialog({show: 150, hide: 1500});   // Show eäffects how quickly the dialog box opens and hide affects how quickly the dialog box closes. 
+            
+             $("#box").dialog({show: "bounce", hide: "explode"});
+
+             //$("#box").dialog({closeOnEscape: false});  // You can't close the dialog box with the escape key
+
+             $("#box").dialog({modal: true});  // Locks down the whole page (useful for logins)
+            });
+
+     </script> 
+     
+</body>
+</html>

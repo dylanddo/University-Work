@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+      
+              </div>
+
+              <div class="main">
+                
+                <img id="resize" src="caesar.jpg">
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a pound sign for a id.
+             $("#resize").resizable({maxWidth: 500, maxHeight: 500});  // Allows us to reize the width and height of the image to a maximum of 300 pixels.
+
+             $("#resize").resizable({minWidth: 150, minHeight: 150});  // Allows us to reize the width and height of the image to a minimum of 50 pixels.
+
+             $("#resize").resizable({autoHide: true});  // autoHides hides the marker.
+      
+             $("#resize").resizable({distance: 350});  // Resizing won't kick in until we resize the image 350 pixels.
+
+             $("#resize").resizable({ghost: true});  // Adds a ghost image when we resize the image.
+
+             $("#resize").resizable({aspectRatio: true});  // Keeps the aspect ratio when resizing.
+
+             $("#resize").resizable({animate: true, animateDuration: "fast"});  
+      });
+
+     </script> 
+     
+</body>
+</html>

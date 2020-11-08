@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Practice
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=l1
+comment2.target=void\ printMe(java.util.List)
+comment3.params=l1\ from\ to
+comment3.target=void\ removeMe(java.util.List,\ int,\ int)
+comment4.params=l1
+comment4.target=void\ reverseMe(java.util.List)
+numComments=5

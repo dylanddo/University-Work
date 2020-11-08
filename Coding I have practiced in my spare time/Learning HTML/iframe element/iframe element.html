@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>
+
+<head> </head>
+
+<body>
+
+   <!-- iframe is another html document that we can embed into our existing webpage-->
+   <!-- So it inserts content from an external source without having to refresh the webpage -->
+
+   <iframe frameborder="1" width="200" height="200" src="first.html" name="ouriframe" id="ouriframe"></iframe> </iframe><br/>
+   <!-- frameborder="0" means it is off and frameborder="1" means it is on -->
+
+   <a href="second.html" target="ouriframe">switch to new document</a>
+   <!-- target="ouriframe" points back to the iframe so the second.html will be contained within the iframe -->
+
+</body>
+
+</html>

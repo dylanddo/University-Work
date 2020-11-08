@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Enumeration
+comment1.params=desc\ age
+comment1.target=Enumeration(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getDesc()
+comment3.params=
+comment3.target=java.lang.String\ getAge()
+numComments=4

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- CSS always go in the head-->
+<style type="text/css">
+
+/* # is used for ID's */
+#Dylan {
+    border: 2px solid red;
+
+
+    position: absolute;     
+    /* absolute postioning gives us complete freedom to place the div and doesn't care if it overlaps with another div tag */
+
+
+    width: 150px;
+    height: 175px;
+    top: 40px;
+    left: 115px;
+}
+
+#third {
+    border: 1px solid blue;
+
+
+    position: relative;     
+    /* relative postioning postions the paragraph in relation to where it would start (not from the top left corner like absolute positioning) */
+
+
+    top: 60px;
+    left: 30px;
+} 
+
+/*This is how you make comments in style (not doing comments correctly in style can cause it not to work) */
+</style>
+
+</head>
+
+<body>
+    <!-- A div is just a section of the website -->
+    <p>first</p>
+    <p>second</p>
+    <p id="third">third</p>
+    <p>fourth</p>
+    
+</body>
+</html>

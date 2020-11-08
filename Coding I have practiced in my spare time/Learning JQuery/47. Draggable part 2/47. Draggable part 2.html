@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+    <link type="text/css" rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+</head>
+  
+<body>
+        <div id="container">
+
+              <div class="header">
+      
+              </div>
+           
+              <div id="nav"> 
+          
+              </div>          
+        
+              <div class="sidebar">
+      
+              </div>
+
+              <div class="main">
+
+               <!-- We use a class instead of an id so we can edit all the div's at once --> 
+
+              <div class="draggable">
+                <img src="caesar1.jpg">
+              </div>
+
+              <div class="draggable">
+                <img src="caesar2.jpg">
+              </div>
+
+              <div class="draggable">
+                <img src="caesar3.jpg">
+              </div>
+
+              </div>
+
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jqueryui/jquery-ui.js"></script>
+    <script>
+          $(document).ready(function() {
+          
+            // We use a period for a class.
+             $(".draggable").draggable();
+	     
+		                    	
+            });
+
+     </script> 
+     
+</body>
+</html>
