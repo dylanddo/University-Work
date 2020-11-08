@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ Class\ Player\r\n\ A\ single\ object\ represents\ the\ single\ player.\r\n\ \r\n\ @author\ Olaf\ Chitil\r\n\ @version\ 3/2/2020\r\n
+comment1.params=start\ goal
+comment1.target=Player(Room,\ Room)
+comment1.text=\r\n\ Constructor,\ taking\ start\ room\ and\ goal\ room.\r\n\ Pre-condition\:\ start\ location\ is\ not\ null.\r\n
+comment2.params=loc
+comment2.target=void\ move(Room)
+comment3.params=
+comment3.target=boolean\ isAtTimeLimit()
+comment3.text=\r\n\ Check\ whether\ time\ limit\ has\ been\ reached.\r\n
+comment4.params=
+comment4.target=boolean\ isAtGoal()
+comment4.text=\r\n\ Check\ whether\ goal\ has\ been\ reached.\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Return\ a\ description.\r\n
+numComments=6
