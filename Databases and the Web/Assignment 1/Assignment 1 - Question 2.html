@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html> <head>
+<title>Simple sorting game</title>
+
+<style type="text/css">
+body {
+  font-family:sans-serif;
+  font-weight:700;
+  font-size:15pt;
+} 
+#container div, div.selected {
+  width: 2em;
+  height: 1.5em;
+  float: left;
+  padding: 1em;
+  margin: 1vw;
+  padding-top:1.5em;
+  text-align: center;
+  transition: background 1s;
+  background: #a0aeef;
+}
+.selected, #container div:hover {
+  background:#ef0a50;
+}
+</style>
+
+
+</head>
+
+
+
+
+<body>
+
+<form id="config">
+How many boxes do you want: <input id ="size" name="size" type="text"]/>
+<input type="button" value="Draw" onClick="resize();"/>
+
+</form><br/>
+
+<div id="container">
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+function setup() 
+{
+    var container = document.getElementById("container");
+
+    // create boxes
+    for (var i = 0; i < size; i++) 
+	{
+		// Creates an variable called box of type div in Container.
+		// Inside the brackets of document.createElement() you need to include the type.
+		var box = document.createElement("div");
+	
+
+		// insert number letter.		
+		// Don't need a makeNumber() function like with, each time you iteriate through the for loop it increases the new box number by one.
+		box.innerHTML = i+1;
+		
+		// Creates a variable called colours thar calls the function makeColor(). The color created is then assigned to colours.
+		var colours = makeColor();
+		
+		// We assign colours to box by calling a style method (.style.backgroundColor) and this applys the color to box.
+		box.style.backgroundColor = colours;
+		
+		//box.style.marginLeft = "(5 * (2 * i))px"; doesn't work.
+		box.style.marginLeft = (5 * (2 * i)) + 'px'; //Correct code.
+		
+
+		// Add into the document
+		// This adds the box (of type div) inside container (of type div) sort of like a div nest. 
+		container.appendChild(box);
+    }
+}
+
+function resize()
+{
+    
+		var form = document.getElementById("config");
+
+		// Reset the board by deleting all existing boxes
+		var container = document.getElementById("container");
+		while (container.children.length > 0) 
+		{
+			container.removeChild(container.firstElementChild);
+		}
+
+		// Set new size
+		size = form.elements["size"].value;
+	
+		// Setup the board again
+		setup();
+    
+}
+
+function makeColor()
+{
+    		var arr = [];
+			//We use i < 3 because in RGB colors we need three different numbers to make an RBG Color.
+    		for(var i = 0; i < 3; i++)
+			{
+       			   
+				//Gives any number between 0 and 256.    
+				var num = Math.floor(Math.random() * 256); 	
+				//Pushes it into the array
+        		arr.push(num);
+		}
+    		
+		//String variable representing RGB. arr[0] gets the randomly generated number at index 0, arr[1] gets it at index 1 and arr[2] gets it at index 2.
+		var newRgb = 'rgb(' + arr[0] + ',' + arr[1] + ',' + arr[2] + ')';
+		//Whatever is var newColor = makeColor(); is going to be this newRgb variable.
+    	return newRgb;
+}
+
+</script>
+
+</body> </html>

@@ -1,0 +1,3 @@
+For question 1 the user enters their information and can add it to a table.
+
+For question 2 the user inputs the number of boxes they want and then several boxes are generated in different colours with the gap between them increasing.

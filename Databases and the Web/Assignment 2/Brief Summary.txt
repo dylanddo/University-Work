@@ -1,0 +1,4 @@
+These tasks from assignment 2B combined our knowledge of html, css, php and sql. It involved using sql select statements from assignment 2A to access specific data from
+the database provided.
+
+Then with that table we would create a table to output these results with the hlp of php.

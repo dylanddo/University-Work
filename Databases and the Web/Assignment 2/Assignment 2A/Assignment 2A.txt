@@ -1,0 +1,75 @@
+1. SELECT name, weighting FROM Assessment
+WHERE cid = ANY(SELECT cid FROM Course WHERE title = 'Database systems')
+ORDER BY name;
++------+-----------+
+| name | weighting |
++------+-----------+
+| A1   |         8 |
+| A2   |        12 |
+| A3   |        20 |
+| EXAM |        60 |
++------+-----------+
+
+
+2. SELECT a.cid, a.name, AVG(CASE WHEN a.aid = g.aid THEN mark END) avg_mark
+FROM Assessment a, Grade g
+GROUP BY a.aid, a.cid 
+ORDER BY a.cid, a.name;
++-------+------+----------+
+| cid   | name | avg_mark |
++-------+------+----------+
+| CO101 | A1   |  50.0000 |
+| CO101 | A2   |  56.9000 |
+| CO101 | A3   |  58.3000 |
+| CO101 | A4   |  55.5000 |
+| CO101 | A5   |  51.5000 |
+| CO102 | A1   |  62.8889 |
+| CO102 | A2   |  61.5556 |
+| CO102 | EXAM |  58.0000 |
+| CO103 | A1   |  62.1250 |
+| CO103 | A2   |  67.0000 |
+| CO103 | A3   |  64.8750 |
+| CO103 | EXAM |  57.2500 |
++-------+------+----------+
+
+
+3. (a) SELECT Grade.sid, Course.cid, Course.title, Assessment.name, Assessment.weighting, Grade.mark
+FROM ((Grade INNER JOIN Assessment ON Grade.aid = Assessment.aid) 
+INNER JOIN Course ON Assessment.cid = Course.cid)
+WHERE Grade.sid = ‘S0001’;
++-------+-------+-----------------------------+------+-----------+------+
+| sid   | cid   | title                       | name | weighting | mark |
++-------+-------+-----------------------------+------+-----------+------+
+| S0001 | CO101 | Object-oriented programming | A1   |        20 |   50 |
+| S0001 | CO101 | Object-oriented programming | A2   |        15 |   72 |
+| S0001 | CO101 | Object-oriented programming | A3   |        15 |   65 |
+| S0001 | CO101 | Object-oriented programming | A4   |        20 |   68 |
+| S0001 | CO101 | Object-oriented programming | A5   |        30 |   55 |
+| S0001 | CO102 | Web technologies            | A1   |        20 |   70 |
+| S0001 | CO102 | Web technologies            | A2   |        30 |   62 |
+| S0001 | CO102 | Web technologies            | EXAM |        50 |   65 |
+| S0001 | CO103 | Database systems            | A1   |         8 |   70 |
+| S0001 | CO103 | Database systems            | A2   |        12 |   62 |
+| S0001 | CO103 | Database systems            | A3   |        20 |   78 |
+| S0001 | CO103 | Database systems            | EXAM |        60 |   69 |
++-------+-------+-----------------------------+------+-----------+------+
+
+
+
+(b) SELECT students.sid, assessments.cid, SUM(grades.mark * assessments.weighting)/100 AS Weighted_Average 
+FROM Assessment assessments, Grade grades, Student students, Course courses
+WHERE grades.aid = assessments.aid 
+AND assessments.cid = courses.cid 
+AND students.sid = grades.sid 
+AND students.sid = ‘S0001’
+GROUP BY courses.cid;
++-------+-------+------------------+
+| sid   | cid   | Weighted_Average |
++-------+-------+------------------+
+| S0001 | CO101 |          60.6500 |
+| S0001 | CO102 |          65.1000 |
+| S0001 | CO103 |          70.0400 |
++-------+-------+------------------+
+
+
+
