@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=FoodList
+comment0.text=\r\n\ The\ FoodList\ class\ makes\ use\ of\ the\ Food\ Class.\ It\ creates\ a\ Vector\ list\ that\ stores\ Food\ objects\ and\ it\ allows\ the\ user\ to\ \r\n\ print\ gluten\ free\ and\ non\ gluten\ free\ objects\ as\ well\ as\ remove\ non\ gluten\ free\ objects\ from\ the\ Vector\ list,\ adding\ it\ to\ a\ \r\n\ new\ Vector\ list.\ It\ also\ allows\ us\ to\ search\ for\ a\ matching\ Food\ object\ in\ the\ list.\r\n\ \r\n\r\n\ By\ Dylan\ Danga\ Dje\ Oleko\r\n\ 25/11/2019\r\n
+comment1.params=
+comment1.target=FoodList()
+comment2.params=x
+comment2.target=void\ addFood(Food)
+comment2.text=\r\n\ Method\ addFood\ takes\ a\ parameter\ of\ type\ Food\ and\ adds\ it\ to\ the\ Vector\ list.\r\n
+comment3.params=
+comment3.target=void\ printSuitable()
+comment3.text=\r\n\ Method\ printSuitable\ iterates\ through\ the\ foodlist\ looking\ for\ food\ objects\ and\ if\ the\ object\ is\ gluten\ free\ \r\n\ (glutenFree\ \=\ true)\ then\ it\ prints\ out\ the\ first\ statement\ which\ includes\ (gluten\ free).\ \r\n\ if\ the\ object\ is\ not\ gluten\ free\ (glutenFree\ \=\ false)\ then\ it\ prints\ out\ the\ second\ statement\ which\ doesn't\ include\ \r\n\ (gluten\ free).\r\n
+comment4.params=x
+comment4.target=boolean\ inStock(java.lang.String)
+comment4.text=\r\n\ Method\ inStock\ returns\ boolean\ and\ takes\ a\ parameter\ of\ type\ String.\ \r\n\ The\ method\ uses\ an\ index\ to\ iterate\ through\ the\ foodlist\ and\ if\ it\ finds\ the\ index\ that\ the\ object\ is\ stored\ it\ returns\ \r\n\ true.\r\n\ If\ not\ the\ method\ continues\ to\ iterate\ through\ the\ list\ and\ if\ there\ are\ no\ matching\ object\ it\ returns\ flase.\r\n
+comment5.params=
+comment5.target=java.util.Vector\ getUnsuitable()
+comment5.text=\r\n\ Method\ getUnsuitable\ creates\ a\ new\ Vector\ called\ nonGlutenFree.\ It\ uses\ an\ iterator\ to\ iterate\ through\ the\ Food\ objects\ \r\n\ in\ the\ list\ and\ it\ calls\ the\ getGlutenFree()\ from\ the\ food\ class\ to\ verify\ that\ the\ object\ being\ gluten\ free\ is\ false.\ \r\n\ If\ it\ is\ false\ the\ object\ is\ added\ to\ the\ Vector\ list\ and\ removed\ from\ the\ previous\ Vector\ foodlist.\r\n
+numComments=6

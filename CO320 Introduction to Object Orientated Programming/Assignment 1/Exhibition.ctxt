@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Exhibition
+comment0.text=\r\n\ This\ is\ a\ class\ that\ keeps\ information\ on\ the\ \r\n\ number\ of\ people\ attending\ an\ exhibition.\r\n\ The\ capacity\ can\ be\ specified\ and\ the\ user\ will\ \r\n\ be\ able\ to\ add\ or\ subtract\ to\ the\ occupancy.\r\n\r\nBy\ Dylan\ Danga\ Dje\ Oleko\r\n
+comment1.params=exhibitionName\ capacity
+comment1.target=Exhibition(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Exhibition.\r\n\ Set\ starting\ occupancy\ at\ zero.\r\n\ The\ capacity\ will\ be\ whatever\ number\ we\ input.\r\n\ The\ exhibition\ name\ will\ be\ whatever\ word\ we\ \r\n\ input.\r\n
+comment2.params=
+comment2.target=int\ getCapacity()
+comment2.text=\r\n\ Returns\ the\ current\ capacity.\r\n
+comment3.params=
+comment3.target=int\ getOccupancy()
+comment3.text=\r\n\ Returns\ the\ current\ occupancy.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\r\n\ Returns\ the\ exhibition\ name.\r\n
+comment5.params=
+comment5.target=void\ attend()
+comment5.text=\r\n\ This\ adds\ to\ the\ occupancy\ in\ increments\ of\ one.\r\n\ If\ the\ occupancy\ is\ not\ less\ than\ the\ capacity\ then\ a\ message\ will\ be\ printed\ out\ telling\ the\ user\ that\ the\ \r\n\ exhibition\ is\ full.\r\n
+comment6.params=
+comment6.target=void\ leave()
+comment6.text=\r\n\ This\ decreases\ the\ occupancy\ in\ increments\ of\ one.\r\n\ If\ the\ occupancy\ is\ less\ than\ or\ equal\ to\ zero\ a\ message\ will\ be\ displayed\ stating\ that\ the\ exhibition\ is\ empty.\r\n
+comment7.params=newCapacity
+comment7.target=void\ changeCapacity(int)
+comment8.params=group
+comment8.target=boolean\ isSpace(int)
+numComments=9

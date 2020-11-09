@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=LoanCompany
+comment0.text=\r\n\ A\ class\ to\ store\ a\ list\ of\ StudentLoan\ objects.\r\n\ \r\n\ \r\n\ @By\ Dylan\ Danga\ Dje\ Oleko\r\n
+comment1.params=
+comment1.target=LoanCompany()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ LoanCompany\r\n
+comment2.params=additionalLoan
+comment2.target=void\ addLoan(StudentLoan)
+comment3.params=
+comment3.target=int\ getNumberOfLoans()
+comment4.params=index\ amount
+comment4.target=boolean\ repay(int,\ int)
+comment5.params=index
+comment5.target=StudentLoan\ removeLoan(int)
+comment5.text=\r\n\ Remove\ a\ file\ from\ the\ collection.\r\n\ @param\ index\ The\ index\ of\ the\ file\ to\ be\ removed.\r\n
+comment6.params=
+comment6.target=void\ list()
+comment7.params=
+comment7.target=void\ showOutstanding()
+comment8.params=studentID
+comment8.target=StudentLoan\ find(java.lang.String)
+comment9.params=
+comment9.target=java.util.LinkedList\ removeClearedLoans()
+numComments=10

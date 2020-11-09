@@ -1,0 +1,2 @@
+The assignment requried us to complete the Word Analyser class. So that it could perform tasks such as adding words to a document, seeing how many times a word occurs, 
+checking if two words follow each other, returning the number of times a word occurs regardless of case sensitvity. 

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Food
+comment0.text=\r\n\ The\ Food\ class\ stores\ three\ variables\ called\ name,\ weight\ and\ glutenFree.\ It\ allows\ the\ user\ to\ create\ a\ Food\ object,\ assign\ \r\n\ it\ a\ name\ and\ weight\ and\ decide\ if\ it\ is\ gluten\ free\ or\ not.\ \r\n\ \r\n\r\n\ By\ Dylan\ Danga\ Dje\ Oleko\r\n\ 25/11/2019\r\n
+comment1.params=name\ weight
+comment1.target=Food(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Food\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Method\ getName\ returns\ the\ name\ the\ user\ inputs.\r\n
+comment3.params=
+comment3.target=int\ getWeight()
+comment3.text=\r\n\ Method\ getWeight\ returns\ the\ weight\ the\ user\ inputs.\r\n
+comment4.params=
+comment4.target=boolean\ getGlutenFree()
+comment4.text=\r\n\ Method\ getGlutenFree\ returns\ false.\r\n
+comment5.params=
+comment5.target=void\ freeFrom()
+comment5.text=\r\n\ Method\ freeFrom\ turns\ glutenFree\ from\ glutenFree\ \=\ false\ to\ glutenFree\ \=\ true.\r\n\r\n
+comment6.params=
+comment6.target=java.lang.String\ getDetails()
+comment6.text=\r\n\ Method\ getDetails\ calls\ the\ getName()\ and\ getWeight().\ If\ the\ glutenFree\ \=\ true\ then\ the\ first\ statement\ with\ \r\n\ "(gluten\ free)"\ is\ printed\ out.\ If\ the\ glutenFree\ \=\ false\ then\ the\ second\ statement\ is\ printed\ without\ the\ \r\n\ "(gluten\ free)".\r\n
+numComments=7

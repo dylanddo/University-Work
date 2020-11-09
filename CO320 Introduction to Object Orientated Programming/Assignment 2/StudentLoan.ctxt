@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=StudentLoan
+comment0.text=\r\n\ The\ Student\ class\ represents\ details\ of\ a\ student's\ loan\r\n\ from\ a\ student\ loan\ company.\r\n\ \r\n\ @author\ David\ J.\ Barnes\r\n\ @version\ 2019.10.21\r\n
+comment1.params=id\ amount
+comment1.target=StudentLoan(java.lang.String,\ int)
+comment1.text=\r\n\ Create\ a\ new\ student\ with\ a\ given\ ID\ and\ loan\ amount.\r\n\ @param\ id\ The\ student's\ ID\r\n\ @param\ amount\ The\ loan\ amount.\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ This\ must\ not\ be\ negative.\r\n\ @throws\ IllegalStateException\ if\ amount\ is\ negative.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getStudentID()
+comment2.text=\r\n\ Return\ the\ ID\ of\ this\ student.\r\n\ @return\ The\ ID.\r\n
+comment3.params=
+comment3.target=int\ getAmount()
+comment3.text=\r\n\ Return\ the\ amount\ of\ the\ loan\ for\ this\ student.\r\n\ @return\ The\ loan\ amount.\r\n
+comment4.params=payment
+comment4.target=void\ payOff(int)
+comment4.text=\r\n\ Pay\ off\ some\ of\ the\ loan.\r\n\ It\ is\ not\ permitted\ to\ pay\ off\ more\ than\ the\r\n\ outstanding\ amount\r\n\ @param\ payment\ The\ amount\ to\ be\ paid\ off.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getDetails()
+comment5.text=\r\n\ Return\ details\ of\ the\ student\ and\ their\ loan.\r\n\ @return\ the\ student's\ ID\ number\ and\ amount\ left\ to\ pay.\r\n
+numComments=6
